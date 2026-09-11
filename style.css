@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:where(ul, ol):where([class]) {
+	padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+	margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+	margin-block: 0;
+}
+
+:where(dd([class])) {
+	margin-left: 0;
+}
+
+:where(ul([class])) {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100%;
+	line-height: 1.5;
+	background-color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style-type: none;
+  background-color: lightgray;
+  padding: 15px 30px 15px 30px;
+  margin: 10px;
+  border: solid 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
+
+.labs {
+	background-color: lightgray;
+	padding: 15px 30px 15px 30px;
+	margin-top: 100px;
+	border: solid 2px;
+  border-radius: 12px;
+}
+
+.list {
+	justify-content: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+  padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+
+li:hover {
+  background-color: gray;
+}
