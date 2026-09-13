@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Streetwear';
+	font-family: 'Opensans';
 	src: url('../lab_3/fonts/Opensans-1.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
@@ -53,15 +53,136 @@ html {
 body {
 	min-height: 100%;
 	line-height: 1.5;
-	background-color: #ffefb3;
-	color: #013e37;
+	background-color: #fff3e5;
+	font-family: 'Opensans', sans-serif;
+	color: #371931;
 }
 
 a {
 	text-decoration: none;
-	color: #ffefb3;
 }
 
 li {
 	list-style-type: none;
+}
+
+header {
+	font-weight: bolder;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	border-bottom: solid #371931 5px;
+}
+
+.shop {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.shop::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #371931;
+	border-radius: 12px;
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border-top: solid #371931 5px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.search-bar {
+	border: #371931 solid 1px;
+	border-radius: 10px;
+	background-color: #e6dbce;
+	transition: background-color 0.3s ease;
+}
+
+.search-bar:focus {
+	outline: none;
+}
+
+.search-bar:hover {
+	background-color: #cfc5b8;
+}
+
+.search-bar-main {
+	display: flex;
+	justify-content: right;
+	padding: 20px 100px 20px 20px;
+	border-bottom: #371931 5px solid;
+	gap: 10px;
+}
+
+.tovar-img {
+	width: 200px;
+	height: 200px;
+}
+
+.tovar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border: solid #371931 2px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.container-tovar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 200px 0 200px;
+}
+
+.cost {
+	display: flex;
+	flex-direction: column;
+}
+
+.info {
+	padding-bottom: 10px;
+}
+
+.buy-button {
+	border: none;
+	background-color: #371931;
+	color:#cfc5b8;
+	border-radius: 8px;
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+	filter: brightness(1.3);
+}
+
+.tovar:hover {
+	transform: scale(1.05);
+}
+
+.stuff {
+	margin-bottom: 50px;
+}
+
+.main-web {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-tovar {
+	padding: 10px;
 }
